@@ -1,0 +1,1 @@
+# opensuse-tomcat-jre25-image
