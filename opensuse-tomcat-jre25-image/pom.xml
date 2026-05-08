@@ -118,6 +118,8 @@
                                     <http_proxy>${env.HTTP_PROXY}</http_proxy>
                                     <https_proxy>${env.HTTPS_PROXY}</https_proxy>
                                     <no_proxy>${env.NO_PROXY}</no_proxy>
+                                    <!-- Pass in opensuse-tomcat-jre25-juli image as param -->
+                                    <JULI_IMAGE>${dockerCafImagePrefix}opensuse-tomcat-jre25-juli${dockerProjectVersion}</JULI_IMAGE>
                                 </args>
                                  <assembly>
                                     <basedir>/</basedir>
@@ -130,10 +132,6 @@
                                         </dependencySets>
                                     </inline>
                                 </assembly>
-                                <args>
-                                    <!-- Pass in opensuse-tomcat-jre25-juli image as param -->
-                                    <JULI_IMAGE>${dockerCafImagePrefix}opensuse-tomcat-jre25-juli${dockerProjectVersion}</JULI_IMAGE>
-                                </args>
                             </build>
                         </image>
                         <image>
